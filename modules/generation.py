@@ -27,8 +27,8 @@ def generate_text_simple(model, idx, max_new_tokens, context_size):
         with torch.no_grad():
             logits = model(idx_possible_in_our_context)
         
-        # Now we only want to work with the last row as it contains the newly generated word
-        # (batch, n_tokens, vocab_size) becomes (batch, vocab_size)
+        # Now we only want to work with the last token as it is the newly generated word
+        # (batch, n_tokens in this sequence, vocab_size) becomes (batch, vocab_size)
         logits = logits[:, -1, :]
 
         # Apply softmax to get probabilities
