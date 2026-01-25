@@ -3,6 +3,7 @@ from .attention import MultiHeadAttention, CausalAttention
 from .transformer import TransformerBlock
 from .gpt import GPTModel
 from .generation import generate_text_simple
+from .generation_advanced import generate
 from .config import GPT_CONFIG_124M
 from .data import (
     text_to_token_ids,
@@ -12,6 +13,7 @@ from .data import (
 )
 from .evaluation import calculate_loss_batch, calculate_loss_loader
 from .training import train_model_simple, evaluate_model, generate_and_print_sample
+from .weight_loader import load_weights_into_gpt
 
 __all__ = [
     # Layers
@@ -26,6 +28,7 @@ __all__ = [
     'GPTModel',
     # Generation
     'generate_text_simple',
+    'generate',
     # Configuration
     'GPT_CONFIG_124M',
     # Data utilities
@@ -40,5 +43,7 @@ __all__ = [
     'train_model_simple',
     'evaluate_model',
     'generate_and_print_sample',
+    # Weight loading
+    'load_weights_into_gpt',
 ]
 
