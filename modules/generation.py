@@ -21,7 +21,7 @@ def generate_text_simple(model, idx, max_new_tokens, context_size):
     # idx is (batch, n_tokens) array of indices in the current context
     for _ in range(max_new_tokens):
         # Limit to our model's context_length
-        idx_possible_in_our_context = idx[:, -context_size:]
+        idx_possible_in_our_context = idx[:, -context_size :]
 
         # Now inferencing to get the result
         with torch.no_grad():
