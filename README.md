@@ -8,8 +8,7 @@ This repository contains my personal study notes and implementations while learn
 - `self-attention.ipynb` - Self-attention and multi-head attention implementations
 - `transformer_block.ipynb` - Transformer block with residual connections
 - `gpt-architecture.ipynb` - Complete GPT model architecture
-- `training.ipynb` - Training concepts and methodologies
-- `evalution.ipynb` - Model evaluation, training loop, and text generation
+- `evalution-training.ipynb` - Model evaluation, training loop, and text generation
 
 ### Modules
 The `modules/` directory contains reusable Python modules organized by functionality:
