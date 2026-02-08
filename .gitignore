@@ -29,4 +29,5 @@ build/
 *.egg-info/
 
 gpt2
-
+sms_spam_collection
+sarcasm
