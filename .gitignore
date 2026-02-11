@@ -34,3 +34,5 @@ sms_spam_collection
 sarcasm
 instruction-data.json
 instruction-data-with-response.json
+
+the-verdict.txt
